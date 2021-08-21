@@ -1,0 +1,88 @@
+header {
+    width: 87%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &.open {
+        .hamburger-btn {
+            >span {
+                background-color: $focus-color;
+            }
+
+            >span:first-child {
+                transform: rotate(45deg);
+            }
+
+            >span:nth-child(2) {
+                opacity: 0;
+            }
+
+            >span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @include breakpoint-up(large) {
+        width: 90%;
+    }
+
+    h2 {
+        flex: 1;
+    }
+
+    .hamburger-btn {
+        >span {
+            display: block;
+            height: 2px;
+            width: 26px;
+            background: $base-color;
+            transform-origin: 3px 1px;
+            transition: all 300ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+
+        @include breakpoint-up(large) {
+            display: none;
+        }
+    }
+
+    nav {
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+
+        ul {
+            display: none;
+
+            @include breakpoint-up(large) {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    @at-root.mobile-menu {
+        width: 87%;
+        margin: auto;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+
+        a {
+            display: block;
+
+            &:not(:first-child) {
+                margin: 13px auto;
+            }
+        }
+    }
+}

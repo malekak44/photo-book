@@ -5,11 +5,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/style.css">
     <title>Photo Book</title>
 </head>
 
 <body>
+    <main>
+        <header>
+            <h2><a href="/">PhotoBook</a></h2>
+            <nav>
+                <div id="btnHamburger" class="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mobile-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
 
+        <section class="hero">
+            <article class="hero__text">
+                <h2>Your Photo Book</h2>
+                <p>This is your own photo book. You can see all your photos here and also can with your friends. This
+                    photo book shows up some grate photos of nature. You can save and see your memories right here.</p>
+                <a href="#">Explore More</a>
+            </article>
+            <article class="hero__image">
+                <div class="gallery__card"> <img src="images/photo-album.png" alt="photo-album">
+            </article>
+        </section>
+        <section class="gallery">
+            <aside>
+                <div class="gallery__text">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#">Family</a></li>
+                        <li><a href="#">Friends</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Party</a></li>
+                        <li><a href="#">Summer</a></li>
+                    </ul>
+                    <img src="images/family-frame.jpeg" alt="family">
+                </div>
+            </aside>
+            <article class="gallery__images">
+                <div class="gallery__card">
+                    <img src="images/english-cottage.jpeg" alt="english-cottage">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/garden-path.jpeg" alt="garden-path">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/rice-terrace.jpeg" alt="rice-terrace">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/rice-paddy.jpeg" alt="rice-paddy">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/peace-lily.jpeg" alt="peace-lily">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/mass-flowers.jpeg" alt="mass-flowers">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/sea-beach.jpeg" alt="sea-beach">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/lake-canada.jpeg" alt="lake-canada">
+                </div>
+
+                <div class="gallery__card">
+                    <img src="images/river-house.jpeg" alt="river-house">
+                </div>
+
+                <div class="gallery__card">
+                    <img src="images/stationaries.jpeg" alt="stationaries">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/garden-way.jpeg" alt="garden-way">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/cotswolds.jpeg" alt="cotswolds">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/country-cottage.jpeg" alt="country-cottage">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/mapple-tree.jpeg" alt="mapple-tree">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/house-garden.jpeg" alt="house-garden">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/london-park.jpeg" alt="london-park">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/japanese-shrine.jpeg" alt="japanese-shrine">
+                </div>
+                <div class="gallery__card">
+                    <img src="images/autumn-garden.jpeg" alt="autumn-garden">
+                </div>
+            </article>
+        </section>
+        <section class="upload-form">
+            <h2>Upload New Image</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <input type="file" name="image" id="image">
+                <input type="submit" value="Upload">
+            </form>
+        </section>
+        <footer>
+
+        </footer>
+    </main>
+    <script src="app/js/script.js"></script>
 </body>
 
 </html>
