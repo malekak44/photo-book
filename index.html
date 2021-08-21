@@ -122,10 +122,25 @@
         <section class="upload-form">
             <h2>Upload New Image</h2>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <input type="file" name="image" id="image">
-                <input type="submit" value="Upload">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" autocomplete="off" placeholder="Your Name...">
+                </div>
+                <div class="form-control">
+                    <label for="image">Image</label>
+                    <input type="url" name="image" id="image" autocomplete="off" placeholder="Image URL...">
+                </div>
+                <div class="form-control">
+                    <label for="category">Category</label>
+                   <input type="text" name="category" id="category" autocomplete="off" placeholder="Photo Category...">
+                </div>
+                <div class="form-control">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" cols="20" rows="5" placeholder="Description goes here..."></textarea>
+                </div>
+                <div class="form-control">
+                    <input type="submit" id="submitBtn" value="Upload">
+                </div>
             </form>
         </section>
         <footer>

@@ -1,6 +1,7 @@
 const btnHamburger = document.querySelector("#btnHamburger");
 const header = document.querySelector("header");
 const mobileMenu = document.querySelector(".mobile-menu");
+const submitBtn = document.querySelector("#submitBtn");
 
 btnHamburger.addEventListener("click", () => {
     if (header.classList.contains("open")) {
@@ -10,4 +11,9 @@ btnHamburger.addEventListener("click", () => {
         header.classList.add("open");
         mobileMenu.classList.add("show");
     }
+});
+
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("Submitted!");
 });
